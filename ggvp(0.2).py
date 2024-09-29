@@ -33,18 +33,23 @@ layout_main = QVBoxLayout()
 layout_h1 = QHBoxLayout()
 layout_h2 = QHBoxLayout()
 layout_h3 = QHBoxLayout()
+layout_h4 = QHBoxLayout()
+layout_h5 = QHBoxLayout()
+
 
 layout_h1.addWidget(question, alignment=Qt.AlignCenter)
 layout_h2.addWidget(btn_answer1, alignment=Qt.AlignCenter)
 layout_h2.addWidget(btn_answer2, alignment=Qt.AlignCenter)
 layout_h3.addWidget(btn_answer3, alignment=Qt.AlignCenter)
 layout_h3.addWidget(btn_answer4, alignment=Qt.AlignCenter)
-layout_h3.addWidget(btn_answer5, alignment=Qt.AlignCenter)
-layout_h3.addWidget(btn_answer6, alignment=Qt.AlignCenter)
+layout_h5.addWidget(btn_answer5, alignment=Qt.AlignCenter)
+layout_h5.addWidget(btn_answer6, alignment=Qt.AlignCenter)
 
 layout_main.addLayout(layout_h1)
 layout_main.addLayout(layout_h2)
 layout_main.addLayout(layout_h3)
+layout_main.addLayout(layout_h4)
+layout_main.addLayout(layout_h5)
 
 main_win.setLayout(layout_main)
 #обробка натискань на перемикачі
